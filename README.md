@@ -32,7 +32,7 @@ duration: 2000
 |参数|说明|类型|可选值|默认值|
 |:---|:---|:---|:---|:---|
 |type|弹窗类型|String|'info', 'success', 'error'|'info'|
-|duration|持续的时间|Number|-|2000|
+|duration|持续的时间|Number||2000|
 
 ## Build Setup
 
