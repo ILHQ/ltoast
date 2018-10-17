@@ -3,9 +3,9 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import Toast from './test/toast.js';
-import './test/toast.scss';
-Vue.use(Toast);
+import ltoast from 'ltoast';
+import 'ltoast/lib/index.css';
+Vue.use(ltoast);
 
 Vue.config.productionTip = false;
 

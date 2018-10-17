@@ -8,7 +8,6 @@ const Toast = {
       opt[property] = options[property]; // 使用 options 的配置
     }
     Vue.prototype.$toast = (tips, types) => {
-      console.log(tips, types);
       if (!types) {
       } else if (typeof types === 'number') {
         opt.duration = types; // 如果types为number 默认是时间
@@ -24,18 +23,18 @@ const Toast = {
       let ToastTpl;
       if (opt.type === 'info') {
         ToastTpl = Vue.extend({
-          template: '<div class="vue_ltoast">' + tips + '</div>'
+          template: '<div class="vue_ltoast opacity">' + tips + '</div>'
         });
       } else if (opt.type === 'success') {
         ToastTpl = Vue.extend({
-          template: '<div class="vue_ltoast">' +
+          template: '<div class="vue_ltoast opacity">' +
           '<i class="iconfont icon-success"></i>' +
           tips +
           '</div>'
         });
       } else if (opt.type === 'error') {
         ToastTpl = Vue.extend({
-          template: '<div class="vue_ltoast">' +
+          template: '<div class="vue_ltoast opacity">' +
           '<i class="iconfont icon-chahao"></i>' +
           tips +
           '</div>'
