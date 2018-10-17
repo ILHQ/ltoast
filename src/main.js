@@ -3,8 +3,8 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import ltoast from 'ltoast';
-import 'ltoast/lib/index.css';
+import ltoast from 'lcc_toast';
+import 'lcc_toast/lib/index.css';
 Vue.use(ltoast);
 
 Vue.config.productionTip = false;
