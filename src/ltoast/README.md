@@ -4,7 +4,7 @@
 
 ## 插件安装
 ```javascript
-npm i ltoast
+npm i lcc_toast
 ```
 ## 引入插件
 ```javascript
